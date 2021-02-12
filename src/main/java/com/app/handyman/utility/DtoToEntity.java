@@ -15,6 +15,7 @@ public class DtoToEntity {
 		reportEntity.setServiceId(report.getServiceId());
 		reportEntity.setStartDate(report.getStartDate());
 		reportEntity.setEndDate(report.getEndDate());
+		reportEntity.setWeekNumber(report.getWeekNumber());
 
 		return reportEntity;
 

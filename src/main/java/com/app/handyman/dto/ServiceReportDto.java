@@ -8,4 +8,5 @@ public class ServiceReportDto {
 	private String technicalId;
 	private String startDate;
 	private String endDate;
+	private String weekNumber;
 }

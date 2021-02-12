@@ -15,4 +15,6 @@ public interface IServiceProductRepository extends ReactiveMongoRepository<Servi
 	public Mono<ServiceReportEntity> findByTechnicalIdAndServiceId(String technicalId,String serviceId);
 	
 	public Flux<ServiceReportEntity>findByTechnicalId(String technicalId);
+	
+	public Flux<ServiceReportEntity> findByTechnicalIdAndWeekNumber(String technicalId,String weekNumber);
 }

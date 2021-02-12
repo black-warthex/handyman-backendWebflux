@@ -15,5 +15,6 @@ public class ServiceReportEntity {
 	private String technicalId;
 	private String startDate;
 	private String endDate;
+	private String weekNumber;
 	
 }
