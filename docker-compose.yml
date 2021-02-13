@@ -1,0 +1,28 @@
+version: '3'
+
+services:
+  backend-handyman:
+    image: backend-handyman
+    build: .
+    environment:
+      NODE_ENV: production
+    ports:
+      - 8080:8080
+    networks:
+      - handyman-network
+    depends_on:
+      - dbmongo
+     
+  dbmongo:
+    image: mongo:latest
+    environment:
+      -MONGO_INITDB_DATABASE: handyman
+    ports:
+      - 27017:27017
+    networks:
+      - handyman-network
+      
+networks: 
+  handyman-network:
+    driver: bridge
+    
